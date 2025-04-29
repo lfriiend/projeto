@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { Box } from "@mui/material"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,7 +42,7 @@ export default function Home() {
             <li>Save and see your changes instantly.</li>
           </ol>
 
-          <div className={styles.ctas}>
+          <Box className={styles.ctas}>
             <a
               className={styles.primary}
               href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -65,7 +66,7 @@ export default function Home() {
             >
               Read our docs
             </a>
-          </div>
+          </Box>
         </main>
         <footer className={styles.footer}>
           <a
